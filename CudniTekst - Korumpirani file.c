@@ -9,7 +9,9 @@ int main() {
     char* buffer = NULL;
 
     FileToBuffer(file, &buffer);
-
+    
+    free(buffer);
+    
     return 0;
 }
 
